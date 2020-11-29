@@ -1,0 +1,463 @@
+page {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    color: transparent;
+}
+
+.query_all {
+    width: 100%;
+    height: 100%;
+    float: left;
+    background-color: #C80000;
+    overflow: hidden;
+}
+
+.query_bai {
+    width: 96%;
+    height: 100%;
+    position: relative;
+    left: 2%;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+.query_input {
+    width: 96%;
+    height: 80px;
+    left: 2%;
+    top: 0px;
+    border-bottom: 1px solid #e4e3e3;
+    position: fixed;
+}
+
+.query_i_up {
+    width: 85%;
+    height: 40px;
+    float: left;
+    background-color: #e4e3e3;
+    margin-top: 20px;
+    margin-left: 1%;
+    border-radius: 15px;
+}
+
+.soso_img {
+    width: 25px;
+    height: 25px;
+    float: left;
+    margin-left: 15px;
+    margin-top: 7.5px;
+}
+
+.soso_input {
+    height: 34px;
+    float: left;
+    margin-left: 5px;
+    margin-top: 3px;
+}
+
+.soso_input input {
+    height: 34px;
+    float: left;
+    line-height: 34px;
+}
+
+.quxiao {
+    width: auto;
+    height: 80px;
+    float: left;
+    margin-left: 10px;
+    line-height: 80px;
+    color: #000000;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.jiansuoLi {
+    width: 76%;
+    float: left;
+    margin-top: 100px;
+    margin-left: 12%;
+    overflow-y: scroll;
+}
+
+.js_bigtitle {
+    width: 100%;
+    height: 40px;
+    float: left;
+}
+
+.dian {
+    width: 4px;
+    height: 4px;
+    float: left;
+    background-color: #817f7f;
+    border-radius: 2px;
+    margin-top: 6px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.js_smtitle {
+    width: 100%;
+    height: auto;
+    float: left;
+    line-height: 15px;
+    font-size: 12px;
+    color: #817f7f;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.smtitle_wz {
+    width: auto;
+    height: auto;
+    float: left;
+    line-height: 15px;
+}
+
+.li_more {
+    width: 100%;
+    height: 20px;
+    float: left;
+}
+
+.li_more_txt {
+    width: auto;
+    height: 20px;
+    float: right;
+    font-size: 12px;
+    color: #817f7f;
+}
+
+.soso_lingdu {
+    width: 100%;
+    position: relative;
+    top: 80px;
+    overflow-y: scroll;
+}
+
+.soso_lingdu_bt {
+    width: 96%;
+    height: 40px;
+    float: left;
+    margin-left: 2%;
+}
+
+.bt_sms {
+    width: auto;
+    height: 40px;
+    float: left;
+    margin-left: 15px;
+    line-height: 40px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.ld_one {
+    width: 96%;
+    height: auto;
+    float: left;
+    margin-left: 2%;
+    background-color: #EDEDED;
+    border-radius: 8px;
+    margin-top: 20px;
+    color: #666;
+    padding-bottom: 5px;
+    padding-top: 10px;
+}
+
+.ld_one_nei {
+    width: 96%;
+    height: auto;
+    float: left;
+    margin-left: 2%;
+}
+
+.ld_left {
+    height: auto;
+    float: left;
+}
+
+.ld_left_bigtxt {
+    font-size: 14px;
+    line-height: 20px;
+    color: #666666;
+    font-weight: 700;
+}
+
+.ld_left_smalltxt {
+    font-size: 12px;
+    line-height: 20px;
+    color: #9c9c9c;
+}
+
+.ld_left_ren {
+    width: 100%;
+    height: 20px;
+    float: left;
+    line-height: 20px;
+    font-size: 12px;
+    color: #9c9c9c;
+}
+
+.ld_right {
+    height: auto;
+    float: left;
+    margin-left: 9px;
+}
+
+.ld_right_cen {
+    width: 40px;
+    height: 70px;
+    position: relative;
+    top: 50%;
+}
+
+.ld_bf_button {
+    width: 25px;
+    height: 25px;
+    float: left;
+}
+
+.ld_bf_button image {
+    width: 25px;
+    height: 25px;
+    border: 0px;
+    margin-left: 7px;
+}
+
+.ld_zan {
+    width: 40px;
+    height: 20px;
+    float: left;
+    border: 0px;
+    margin-top: 12px;
+    margin-left: 10px;
+}
+
+.ld_zan image {
+    width: 20px;
+    height: 20px;
+    border: 0px;
+}
+
+.ld_zan_xin {
+    width: 20px;
+    height: 20px;
+}
+
+.ld_zan_wz {
+    width: 40px;
+    float: left;
+    font-size: 10px;
+    height: 20px;
+    margin-top: 8px;
+    text-align: center;
+}
+
+.sousuoview {
+    width: auto;
+    height: 50px;
+    float: right;
+}
+
+.query_img {
+    width: 26px;
+    height: 26px;
+    float: right;
+    margin-right: 3px;
+    margin-top: 12px;
+}
+
+.query_txt {
+    width: auto;
+    height: 50px;
+    line-height: 50px;
+    float: right;
+    font-size: 14px;
+    color: #666;
+    margin-right: 25px;
+}
+
+.conlist {
+    width: 94%;
+    height: auto;
+    position: relative;
+    top: 80px;
+    left: 3%;
+    padding-bottom: 10px;
+}
+
+.conlist_one {
+    width: 100%;
+    height: 120px;
+    float: left;
+    border-bottom: 1px solid #EDEDED;
+}
+
+.list_left {
+    width: 70%;
+    height: 120px;
+    float: left;
+}
+
+.list_right {
+    width: 30%;
+    height: 120px;
+    float: left;
+}
+
+.list_title {
+    width: 100%;
+    height: auto;
+    float: left;
+    line-height: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 5px;
+    overflow: hidden;
+}
+
+.list_ms {
+    width: auto;
+    height: auto;
+    float: left;
+    line-height: 15px;
+    font-size: 12px;
+    color: #999;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.list_tj {
+    width: 100%;
+    height: 30px;
+    float: left;
+    margin-left: 5px;
+}
+
+.tj_img2 {
+    width: 12px;
+    height: 10px;
+    float: left;
+    margin-top: 10px;
+}
+
+.tj_img2 image {
+    width: 12px;
+    height: 10px;
+}
+
+.tj_img {
+    width: 12px;
+    height: 10px;
+    float: left;
+    margin-top: 10px;
+}
+
+.tj_img image {
+    width: 12px;
+    height: 10px;
+}
+
+.tj_ducont {
+    width: auto;
+    height: 15px;
+    float: left;
+    margin-left: 5px;
+    margin-top: 15px;
+    font-size: 10px;
+    color: #999;
+}
+
+.right_con {
+    width: 45px;
+    height: 65px;
+    margin: 0 auto;
+    margin-top: 27.5px;
+}
+
+.right_ld_img {
+    width: 45px;
+    height: 45px;
+    float: left;
+}
+
+.right_ld_img image {
+    width: 30px;
+    height: 45px;
+    float: left;
+    margin-left: 7.5px;
+}
+
+.right_txt {
+    width: 45px;
+    height: 20px;
+    float: left;
+    line-height: 20px;
+    font-size: 11px;
+    color: #c80000;
+}
+
+.nomessagelist {
+    width: 100%;
+    height: 60px;
+    float: left;
+    line-height: 60px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.moreload {
+    width: 100%;
+    height: 60px;
+    float: left;
+    background-color: #EDEDED;
+    line-height: 60px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.mu_tab {
+    width: auto;
+    height: 40px;
+    float: left;
+}
+
+.muluborder {
+    width: 120px;
+    height: 20px;
+    border: 1px solid #EDEDED;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.mulutabtxt {
+    width: 100px;
+    height: 20px;
+    float: left;
+    line-height: 20px;
+    font-size: 12px;
+    color: #d3d1d1;
+    padding-left: 5px;
+    overflow: hidden;
+}
+
+.backmulu {
+    width: 5px;
+    height: 10px;
+    float: left;
+    font-size: 10px;
+    line-height: 10px;
+    margin-top: 4px;
+    margin-right: 5px;
+    color: #d3d1d1;
+}

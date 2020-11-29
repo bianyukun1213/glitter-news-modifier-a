@@ -1,0 +1,670 @@
+page {
+    background-color: #c80000;
+    height: 100%;
+}
+
+.temp_all {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #c80000;
+}
+
+.index_down {
+    width: 96%;
+    min-height: 95%;
+    height: auto;
+    float: left;
+    margin-left: 2%;
+    background-color: #fff;
+    margin-top: 15px;
+    border-radius: 8px;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.editmysms {
+    width: 95%;
+    height: 40px;
+    float: left;
+    text-align: right;
+    font-size: 12px;
+    line-height: 40px;
+}
+
+.jp_title {
+    width: 94%;
+    height: 50px;
+    float: left;
+    margin-left: 3%;
+    margin-top: 10px;
+}
+
+.jp_title_txt {
+    width: auto;
+    margin-left: 2%;
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+}
+
+.jp_title_select {
+    width: 80px;
+    height: 30px;
+    float: right;
+    font-size: 12px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 15px;
+    background-color: #EDEDED;
+    margin-top: 10px;
+}
+
+.one_list {
+    width: 96%;
+    height: auto;
+    float: left;
+    margin-left: 2%;
+    background-color: #EDEDED;
+    border-radius: 8px;
+    margin-top: 10px;
+    color: #666;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.one_nei {
+    width: 96%;
+    height: auto;
+    float: left;
+    margin-left: 2%;
+    margin-top: 10px;
+}
+
+.one_img {
+    width: 40px;
+    height: 40px;
+    float: left;
+    border-radius: 20px;
+}
+
+.one_img image {
+    width: 40px;
+    height: 40px;
+    float: left;
+    border-radius: 20px;
+}
+
+.bookimg {
+    width: 40px;
+    height: 40px;
+    float: left;
+    border-radius: 5px;
+}
+
+.one_right {
+    width: calc(100% - 100px);
+    height: auto;
+    float: left;
+    margin-left: 10px;
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.one_nick {
+    width: 100%;
+    height: 15px;
+    float: left;
+    font-size: 11px;
+    margin-top: 5px;
+}
+
+.one_txt {
+    width: 100%;
+    height: 20px;
+    float: left;
+    text-align: left;
+    line-height: 20px;
+    font-size: 12px;
+}
+
+.playerdiv {
+    width: 30px;
+    height: 40px;
+    float: right;
+    margin-right: 5px;
+}
+
+.anniu {
+    width: 25px;
+    height: 25px;
+    float: left;
+    margin-top: 7.5px;
+}
+
+.shoucang {
+    width: 60px;
+    height: 30px;
+    float: right;
+    margin-top: 5px;
+}
+
+.deletetxt {
+    width: 40px;
+    height: 40px;
+    float: right;
+    line-height: 40px;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.hongxin {
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin-top: 5px;
+}
+
+.zan_num {
+    width: auto;
+    height: 20px;
+    float: left;
+    font-size: 10px;
+    color: #999;
+    line-height: 20px;
+    margin-top: 5px;
+    padding-left: 5px;
+}
+
+.bofangqi {
+    display: none;
+}
+
+.gettop {
+    margin-top: 35px;
+}
+
+.my_sms {
+    width: 96%;
+    height: 200px;
+    float: left;
+    margin-left: 4%;
+    border-bottom: 1px solid #EDEDED;
+}
+
+.my_sms_cen {
+    width: 100%;
+    height: 80px;
+    float: left;
+}
+
+.my_headview {
+    width: 60px;
+    height: 60px;
+    float: left;
+    border-radius: 40px;
+    margin-top: 10px;
+}
+
+.my_headview image {
+    width: 60px;
+    height: 60px;
+    float: left;
+    border-radius: 40px;
+}
+
+.my_headright {
+    width: auto;
+    height: 50px;
+    float: left;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.my_head_r_up {
+    width: auto;
+    height: 25px;
+    float: left;
+    line-height: 25px;
+}
+
+.my_nickt_txt {
+    max-width: 100px;
+    width: auto;
+    height: 25px;
+    float: left;
+    line-height: 25px;
+    font-size: 18px;
+    overflow: hidden;
+    font-weight: bold;
+}
+
+.my_sex_view {
+    width: 15px;
+    height: 15px;
+    float: left;
+    margin-left: 6px;
+    margin-top: 5px;
+}
+
+.my_sex_view image,.my_zan_view image {
+    width: 15px;
+    height: 15px;
+    float: left;
+}
+
+.my_zan_view {
+    width: 15px;
+    height: 15px;
+    float: left;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+.my_zan_nums {
+    width: auto;
+    height: 15px;
+    float: left;
+    line-height: 15px;
+    font-size: 12px;
+    color: #666;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.countxin {
+    width: 20px;
+    height: 16px;
+    float: left;
+    margin-left: 10px;
+}
+
+.countnums_ {
+    width: auto;
+    height: 16px;
+    float: left;
+    line-height: 16px;
+    margin-left: 15px;
+}
+
+.my_head_r_down {
+    width: 100%;
+    height: 25px;
+    float: left;
+    line-height: 25px;
+    font-size: 12px;
+    color: #666;
+}
+
+.my_sms_down {
+    width: 100%;
+    height: 60px;
+    float: left;
+    margin-top: 10px;
+}
+
+.my_address {
+    width: 100%;
+    height: 30px;
+    float: left;
+    font-size: 12px;
+    line-height: 30px;
+    color: #666;
+    overflow: hidden;
+}
+
+.no_login_center {
+    width: 96%;
+    height: 100%;
+    float: left;
+    margin-left: 2%;
+    background-color: #fff;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.no_login_up {
+    width: 80%;
+    height: 200px;
+    float: left;
+    margin-left: 10%;
+    border-bottom: 1px solid #EDEDED;
+}
+
+.no_login_head {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto;
+    margin-top: 55px;
+}
+
+.no_login_head image {
+    width: 90px;
+    height: 90px;
+    border: 0px;
+}
+
+.no_login_ms {
+    width: 100%;
+    height: 30px;
+    float: left;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.login_center {
+    width: 100%;
+    height: 30px;
+    float: left;
+    margin-top: 50px;
+}
+
+.login_button {
+    width: 100px;
+    height: 30px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 8px;
+    background-color: #c80000;
+}
+
+.nocontent {
+    width: 96%;
+    height: 60px;
+    float: left;
+    margin-left: 2%;
+    margin-top: 10px;
+    color: #666666;
+    background-color: #ededed;
+    text-align: center;
+    line-height: 60px;
+}
+
+.shouquan_all {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0,0.5);
+    z-index: 100;
+}
+
+.shouquan {
+    width: 90%;
+    height: 300px;
+    position: absolute;
+    margin-left: 5%;
+    top: 50%;
+    margin-top: -150px;
+    z-index: 9;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.header {
+    width: 90%;
+    height: 140px;
+    float: left;
+    margin-left: 5%;
+    border-bottom: 1px solid rgb(189,188,188);
+}
+
+.headimg {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.headimg image {
+    width: 80px;
+    height: 80px;
+    border: 0;
+    border-radius: 40px;
+}
+
+.content {
+    width: 90%;
+    height: auto;
+    float: left;
+    margin-left: 5%;
+}
+
+.sq_txt {
+    width: 100%;
+    height: 50px;
+    float: left;
+    line-height: 50px;
+    font-size: 16px;
+}
+
+.gxxx {
+    width: 100%;
+    height: 30px;
+    float: left;
+    line-height: 30px;
+    color: rgb(185,184,184);
+    font-size: 16px;
+}
+
+.tel_view {
+    width: 100%;
+    height: 42px;
+    float: left;
+    margin-top: 10px;
+}
+
+.tel_txt {
+    width: auto;
+    height: 42px;
+    float: left;
+    font-size: 12px;
+    line-height: 42px;
+}
+
+.tel_input_views {
+    width: 150px;
+    height: 42px;
+    float: left;
+    margin-left: 5px;
+}
+
+.tel_input_views input {
+    width: 150px;
+    height: 42px;
+    float: left;
+    background-color: #ededed;
+    line-height: 42px;
+    padding-left: 5px;
+    font-size: 12px;
+}
+
+.bottomview {
+    width: 100%;
+    height: 40px;
+    float: left;
+    margin-top: 10px;
+}
+
+.sendcodeview {
+    width: auto;
+    height: 42px;
+    float: left;
+    margin-left: 15px;
+    border: 1px solid rgb(192,191,191);
+    box-sizing: border-box;
+}
+
+.sendcodeview button {
+    width: 88px;
+    height: 38px;
+    line-height: 38px;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    min-height: 38px;
+}
+
+.sendcodeview button::after {
+    width: 88px;
+}
+
+.yzm_view {
+    width: 150px;
+    height: 42px;
+    float: left;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+.yzm_view input {
+    width: 150px;
+    height: 42px;
+    float: left;
+    background-color: #ededed;
+    line-height: 42px;
+    padding-left: 5px;
+    font-size: 12px;
+}
+
+.sendbacksmsview {
+    width: auto;
+    height: 42px;
+    margin-top: 5px;
+    float: left;
+    line-height: 42px;
+    text-align: left;
+    font-size: 12px;
+    color: #ec0404;
+    margin-left: 10px;
+}
+
+#loading {
+    background-color: rgb(240,216,111,0.7);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 991;
+    margin-top: 0px;
+    top: 0px;
+    display: none;
+}
+
+#loading-center {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#loading-center-absolute {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 80px;
+    width: 150px;
+    margin-top: -40px;
+    margin-left: -60px;
+}
+
+.loadtxtnew {
+    font-size: 12px;
+    color: #fff;
+    width: 150px;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    float: left;
+}
+
+.object {
+    width: 8px;
+    height: 50px;
+    margin-right: 5px;
+    background-color: #FFF;
+    animation: animate 1s infinite;
+    float: left;
+}
+
+.object:last-child {
+    margin-right: 0px;
+}
+
+.object:nth-child(10) {
+    animation-delay: 0.9s;
+}
+
+.object:nth-child(9) {
+    animation-delay: 0.8s;
+}
+
+.object:nth-child(8) {
+    animation-delay: 0.7s;
+}
+
+.object:nth-child(7) {
+    animation-delay: 0.6s;
+}
+
+.object:nth-child(6) {
+    animation-delay: 0.5s;
+}
+
+.object:nth-child(5) {
+    animation-delay: 0.4s;
+}
+
+.object:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+.object:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.object:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+@-webkit-keyframes animate {
+    50% {
+        transform: scaleY(0);
+    }
+}
+
+@keyframes animate {
+    50% {
+        transform: scaleY(0);
+    }
+}
+
+.my_study_sta {
+    width: 100%;
+    height: 30px;
+    float: left;
+    font-size: 32rpx;
+    line-height: 30px;
+    color: #666;
+    overflow: hidden;
+}
+
+.heise {
+    font-weight: bold;
+    color: black;
+}
+
+.hongse {
+    font-weight: bold;
+    color: #c80000;
+}

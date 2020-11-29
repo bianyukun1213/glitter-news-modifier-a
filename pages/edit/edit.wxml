@@ -1,0 +1,10 @@
+<view class="root">
+<text class="text">去他妈的极光新闻！\n本修改版由 Hollis 制作，请勿传播！\n请不要使用「我的小站」以外的功能，以免产生数据冲突并造成意料之外的后果！</text>
+<image class="img" src="{{userhead}}" bindtap="onAvatarChange"/>
+<form bindsubmit="onSave">
+<input name="usernick" class="ipt" placeholder="姓名" value="{{usernick}}"/>
+<input name="userqianming" class="ipt" placeholder="单位" value="{{userqianming}}"/>
+<input name="StudyAllDay" class="ipt" placeholder="学习天数" value="{{StudyAllDay}}" type="number"/>
+<button class="btn" type="primary" form-type="submit">保存信息</button>
+</form>
+</view>

@@ -1,0 +1,32 @@
+.root {
+  display: flex;
+  flex-direction: column;
+}
+
+.text {
+  display: flex;
+  color: dodgerblue;
+  flex-direction: column;
+  text-align: center;
+  margin: 15px;
+}
+
+.img {
+  height: 100px;
+  width: 100px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+.ipt {
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+.btn {
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}

@@ -1,0 +1,57 @@
+<view class="query_all">
+    <view class="query_bai">
+        <view class="query_input">
+            <view class="query_i_up">
+                <view class="soso_img">
+                    <image src="../imgs/chaxun.png" style="width:25px;height:25px;border:0px;"></image>
+                </view>
+                <view class="soso_input" style="width:{{soso_input_width}}px;">
+                    <input bindinput="bindKeyInput" placeholder="请输入搜索内容" style="width:{{soso_input_width}}px;"></input>
+                </view>
+            </view>
+            <view bindtap="GobackUpPage" class="quxiao">取消</view>
+        </view>
+        <view class="jiansuoLi" style="display:{{jiansuo_sta}}; height:{{soso_lingdu_height}}px;">
+            <view class="js_bigtitle">目录检索：</view>
+            <view class="js_smtitle" wx:for="{{fenlei_list}}" wx:for-item="bitemName" wx:key="bid">
+                <view class="dian"></view>
+                <view bindtap="SelectFenleiToList" class="smtitle_wz" data-con="{{bitemName.fenlei_name}}" data-id="{{bitemName.id}}" style="width:{{li_width}}px;">{{bitemName.fenlei_name}}</view>
+            </view>
+        </view>
+        <view class="conlist" style="height:{{soso_lingdu_height}}px; display:{{chaxunjieguo_sta}}">
+            <view class="soso_lingdu_bt">
+                <view class="bt_sms">为您搜索到：</view>
+                <view bindtap="backmuluview" class="mu_tab">
+                    <view class="muluborder">
+                        <view class="mulutabtxt">{{tab_con}}</view>
+                        <view class="backmulu">x</view>
+                    </view>
+                </view>
+            </view>
+            <view class="conlist_one" wx:for="{{fl_query_smslist}}" wx:for-item="bitemName" wx:key="bid">
+                <view class="list_left">
+                    <view class="list_title">{{bitemName.zhu_title}}</view>
+                    <view class="list_ms">{{bitemName.fu_title}}</view>
+                    <view class="list_tj">
+                        <view class="tj_img2">
+                            <image src="../imgs/xiaoren.png"></image>
+                        </view>
+                        <view class="tj_ducont">{{bitemName.read_nums}}人读过</view>
+                        <view class="tj_img" style="margin-left:10px;">
+                            <image src="../imgs/zishu.png"></image>
+                        </view>
+                        <view class="tj_ducont">{{bitemName.con_length}}字</view>
+                    </view>
+                </view>
+                <view class="list_right">
+                    <navigator class="right_con" target="self" url="../luyinone/luyinone?id={{bitemName.id}}">
+                        <view class="right_ld_img">
+                            <image src="../imgs/langdu.png"></image>
+                        </view>
+                        <view class="right_txt">开始朗读</view>
+                    </navigator>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

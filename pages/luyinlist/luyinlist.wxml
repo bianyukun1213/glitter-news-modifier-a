@@ -1,0 +1,78 @@
+<view id="loading" style="display:{{loading_sta}};">
+    <view id="loading-center">
+        <view id="loading-center-absolute">
+            <view class="loadtxtnew">加载中请稍等</view>
+            <view class="object"></view>
+            <view class="object"></view>
+            <view class="object"></view>
+            <view class="object"></view>
+            <view class="object"></view>
+            <view class="object"></view>
+            <view class="object"></view>
+            <view class="object"></view>
+            <view class="object"></view>
+            <view class="object"></view>
+        </view>
+    </view>
+</view>
+<view class="luyinlist">
+    <view class="luyinlist_page_title">
+        <view class="p_t_title">诵读内容</view>
+        <view class="sousuoview">
+            <view class="selectOrderByView">
+                <view bindtap="orderByLuyinList" class="orderby_up" data-id="0" style="display:{{pxzt==0?'block':'none'}};">
+                    <image src="../imgs/up.png"></image>
+                </view>
+                <view bindtap="orderByLuyinList" class="orderby_down" data-id="1" style="display:{{pxzt==1?'block':'none'}};">
+                    <image src="../imgs/down.png"></image>
+                </view>
+            </view>
+            <view bindtap="gotoqueryView" class="query_txt">搜索</view>
+            <view bindtap="gotoqueryView" class="query_img">
+                <image src="../imgs/chaxun.png" style="width:26px;height:26px;"></image>
+            </view>
+        </view>
+    </view>
+    <view class="conlist">
+        <view class="conlist_one" wx:for="{{lylist}}" wx:for-item="bitemName" wx:key="bid">
+            <view class="list_left">
+                <view class="list_title">{{bitemName.zhu_title}}</view>
+                <view class="list_ms">{{bitemName.fu_title}}</view>
+                <view class="list_tj">
+                    <view class="tj_img2">
+                        <image src="../imgs/xiaoren.png"></image>
+                    </view>
+                    <view class="tj_ducont">{{bitemName.read_nums}}人读过</view>
+                    <view class="tj_img" style="margin-left:10px;">
+                        <image src="../imgs/zishu.png"></image>
+                    </view>
+                    <view class="tj_ducont">{{bitemName.con_length}}字</view>
+                </view>
+            </view>
+            <view class="list_right">
+                <navigator class="right_con" target="self" url="../luyinone/luyinone?id={{bitemName.id}}">
+                    <view class="right_ld_img">
+                        <image src="../imgs/langdu.png"></image>
+                    </view>
+                    <view class="right_txt">开始诵读</view>
+                </navigator>
+            </view>
+        </view>
+        <view class="nomessagelist" wx:if="{{lylist.length==0}}">
+      努力的加载中。。。
+    </view>
+    </view>
+</view>
+<wxs module="tools">
+var sub = (function(val) {
+    if (val.length == 0 || val == undefined) {
+        return
+    };
+    if (val.length > 35) {
+        return (val.substring(0, 35) + "...")
+    } else {
+        return (val + "...")
+    }
+});
+module.exports.sub = sub;
+</wxs>

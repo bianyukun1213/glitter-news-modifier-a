@@ -1,0 +1,112 @@
+<view id="loading" style="display:{{loaddonghua_new_sta}};">
+    <view id="loading-center">
+        <view id="loading-center-absolute">
+            <view class="loadtxtnew">加载中请稍等</view>
+            <view class="object"></view>
+            <view class="object"></view>
+            <view class="object"></view>
+            <view class="object"></view>
+            <view class="object"></view>
+            <view class="object"></view>
+            <view class="object"></view>
+            <view class="object"></view>
+            <view class="object"></view>
+            <view class="object"></view>
+        </view>
+    </view>
+</view>
+<view class="shouquan_all" wx:if="{{isHide}}">
+    <view class="shouquan">
+        <view wx:if="{{canIUse}}">
+            <view class="content">
+                <view class="sq_txt">参与累计时长需要获取以下权限</view>
+                <text class="gxxx">获得你的公开信息(昵称，头像等)</text>
+                <view class="tel_view">
+                    <view class="tel_input_views">
+                        <input bindinput="inputTel" maxlength="11" placeholder="手机号码" type="number"></input>
+                    </view>
+                    <view class="sendcodeview">
+                        <button bindtap="sendCode" disabled="{{smsFlag}}" style="color:{{sendColor}};font-size:12px;width:88px;">{{sendTime}}</button>
+                    </view>
+                </view>
+                <view class="yzm_view">
+                    <input bindinput="inputCode" maxlength="8" placeholder="验证码" type="number"></input>
+                </view>
+                <view class="sendbacksmsview">{{sendsmsback}}</view>
+            </view>
+            <view class="bottomview">
+                <button bindgetuserinfo="bindGetUserInfo" class="bottom" disabled="{{souquanFlag}}" lang="zh_CN" openType="getUserInfo" type="primary">
+        授权登录
+        </button>
+            </view>
+        </view>
+        <view wx:else>请升级微信版本</view>
+    </view>
+</view>
+<view class="shouquan_all" wx:if="{{isHide_tel}}">
+    <view class="shouquan">
+        <view wx:if="{{canIUse_tel}}">
+            <view class="header">
+                <view class="headimg">
+                    <image src="../../pages/imgs/logo.png"></image>
+                </view>
+            </view>
+            <view class="content">
+                <view class="sq_txt">累加学习时长</view>
+                <text class="gxxx">需要获取您微信绑定的手机号码</text>
+            </view>
+            <button bindgetphonenumber="getPhoneNumber" class="bottom" openType="getPhoneNumber" type="primary">
+        同意获取
+        </button>
+        </view>
+        <view wx:else>请升级微信版本</view>
+    </view>
+</view>
+<view class="shangchuantixing" style="display:{{loadingSta}};">
+    <view class="scloadtxt">请您稍等</view>
+    <view class="loadimg">
+        <image src="../../pages/imgs/loading.gif"></image>
+    </view>
+</view>
+<view class="ly_one_all">
+    <view class="ly_one_up">
+        <view class="wz_txt_title">{{lyone[0].zhu_title}}</view>
+        <view class="wz_txt_title2">{{lyone[0].fu_title}}</view>
+        <view class="wz_con" style="height:{{wz_con_height}}px;">
+            <rich-text nodes="{{nodes}}" space="emsp" style="padding-bottom:40px;"></rich-text>
+        </view>
+    </view>
+    <view class="ly_one_down">
+        <view class="lytixing">提醒：请将手机音量调至1/3处效果最佳。</view>
+        <view class="bofangqu" style="height:{{bofan_height}}px;">
+            <view class="bf_shiting" style="margin-top:{{st_margin_top}}px;" wx:if="{{shiting_sta==false}}">
+                <image src="../imgs/shiting_hui.png"></image>
+                <view class="st_txt">试听</view>
+            </view>
+            <view bindtap="{{!buttonClicked_shiting?'shitingluyin':'dengdaiToast'}}" class="bf_shiting" style="margin-top:{{st_margin_top}}px;" wx:elif="{{shiting_sta==true}}">
+                <image src="../imgs/shiting_hong.png"></image>
+                <view class="st_txt">试听</view>
+            </view>
+            <view bindtap="{{!buttonClicked?'luyin_begin':''}}" class="bf_luzhi" style="margin-top:{{ly_margin_top}}px; margin-left:{{bf_jiange}}px; margin-right:{{bf_jiange}}px;" wx:if="{{luyin_sta==false}}">
+                <image src="../imgs/luyin_start.png"></image>
+                <view class="st_txt2">开始录制</view>
+            </view>
+            <view bindtap="luyin_end" class="bf_luzhi" style="margin-top:{{ly_margin_top}}px; margin-left:{{bf_jiange}}px; margin-right:{{bf_jiange}}px;" wx:elif="{{luyin_sta==true}}">
+                <image src="../imgs/luyin_stop.png"></image>
+                <view class="st_txt2">停止录音</view>
+            </view>
+            <view class="bf_baocun" style="margin-top:{{bc_margin_top}}px;" wx:if="{{baocun_sta==false}}">
+                <image src="../imgs/baocun_hui.png"></image>
+                <view class="st_txt3">保存</view>
+            </view>
+            <view bindtap="{{!buttonClicked_upload?'saveFile':'chongfuToast'}}" class="bf_baocun" style="margin-top:{{bc_margin_top}}px;" wx:if="{{baocun_sta==true}}">
+                <image src="../imgs/baocun_hong.png"></image>
+                <view class="st_txt3">保存</view>
+            </view>
+        </view>
+    </view>
+    <view class="daojishiview" style="display:{{daojishi_sta}}">
+        <view class="miaotxt">{{miaoshu}}</view>
+        <view class="miaoMiaoshu">{{miaoshu}}秒后开始录音</view>
+    </view>
+</view>

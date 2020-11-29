@@ -1,0 +1,72 @@
+<view id="loading" style="display:{{load_new_sta}}">
+    <view id="loading-center">
+        <view id="loading-center-absolute">
+            <view class="loadtxtnew">加载中请稍等</view>
+            <view class="object"></view>
+            <view class="object"></view>
+            <view class="object"></view>
+            <view class="object"></view>
+            <view class="object"></view>
+            <view class="object"></view>
+            <view class="object"></view>
+            <view class="object"></view>
+            <view class="object"></view>
+            <view class="object"></view>
+        </view>
+    </view>
+</view>
+<view class="ph_index" style="height:{{screen_height}}px;">
+    <view class="ph_tabs_img" style="height:{{ph_fl_img_height}}px;">
+        <label wx:for="{{ph_fl_list}}" wx:for-item="bitemName" wx:key="bid">
+            <view class="one_img" style="width:{{ph_fl_img_width}}px; height:{{ph_fl_img_height}}px;" wx:if="{{bitemName.if_hong==1}}">
+                <image bindtap="SelectSmsForFenLeiID_mysql2" data-id="{{bitemName.dept_id}}" src="https://xicdn.hljtv.com/houtai/{{bitemName.ph_fl_img}}" style="width:{{ph_fl_img_width}}px; height:{{ph_fl_img_height}}px;"></image>
+            </view>
+            <view class="one_img" style="width:{{ph_fl_img_width}}px; height:{{ph_fl_img_height}}px;" wx:elif="{{bitemName.if_hong==0}}">
+                <image bindtap="SelectSmsForFenLeiID_mysql2" data-id="{{bitemName.dept_id}}" src="https://xicdn.hljtv.com/houtai/{{bitemName.ph_fl_img_hui}}" style="width:{{ph_fl_img_width}}px; height:{{ph_fl_img_height}}px;"></image>
+            </view>
+            <view class="one_kong" style="height:{{ph_fl_img_height}}px;"></view>
+        </label>
+    </view>
+    <view class="ph_bai" style="height:{{screen_height-40}}px;">
+        <view class="ph_conview">
+            <view class="ph_tab_title">
+                <view class="ph_title_1" style="width:40px;">排名</view>
+                <view class="ph_title_2" style="width:{{dw_title_width}}px;">单位</view>
+                <view class="ph_title_3" style="width:65px;">昨日参与率</view>
+                <view class="ph_title_3" style="width:65px;">日均参与率</view>
+            </view>
+            <view class="ph_one" wx:for="{{ph_sql_list}}" wx:for-item="bitemName" wx:key="bid">
+                <label wx:if="{{index==0}}">
+                    <view class="ph_one_img" style="width:40px;">
+                        <image src="../imgs/1.png" style="width:40px; height:40px;"></image>
+                    </view>
+                </label>
+                <label wx:if="{{index==1}}">
+                    <view class="ph_one_img" style="width:40px;">
+                        <image src="../imgs/2.png" style="width:40px; height:40px;"></image>
+                    </view>
+                </label>
+                <label wx:if="{{index==2}}">
+                    <view class="ph_one_img" style="width:40px;">
+                        <image src="../imgs/3.png" style="width:40px; height:40px;"></image>
+                    </view>
+                </label>
+                <label wx:if="{{index>2}}">
+                    <view class="ph_one_num" style="width:40px;">
+              {{index+1}}
+            </view>
+                </label>
+                <view class="ph_one_wz" style="width:{{dw_title_width}}px;">
+                    <view style="width:auto; height:20px float:left; line-height:20px;font-size:12px;margin-top:30px;">
+            {{bitemName.danwei_name}}
+          </view>
+                </view>
+                <view class="ph_one_bfb" style="width:60px;">{{bitemName.canyudu_r}}%</view>
+                <view class="ph_one_bfb" style="width:60px;">{{bitemName.canyudu_z}}%</view>
+            </view>
+            <label wx:if="{{ph_sql_list==0}}">
+                <view style="width:100%; height:100px; line-height:100px; font-size:14px;text-align: center;">还没有排行数据^_^</view>
+            </label>
+        </view>
+    </view>
+</view>
