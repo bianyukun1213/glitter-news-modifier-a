@@ -1,6 +1,0 @@
-<view class="new_background_img">
-    <image src="https://xicdn.hljtv.com/xiaochengxu/img/{{indexbackgroundName}}" style="width:{{screen_width}}px; height:{{screen_height}}px;"></image>
-</view>
-<view class="backview">
-    <button plain appParameter="wechat" binderror="launchAppError" class="button" openType="launchApp">返回首页</button>
-</view>
